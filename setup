@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+pushd client && \
+npm install && \
+bower install && \
+grunt build && \
+popd && \
+pushd server && \
+bundle && \
+popd
