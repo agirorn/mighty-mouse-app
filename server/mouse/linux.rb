@@ -23,7 +23,7 @@ module Mouse
 
     # Click!
     def click
-      cmd = "xdotool click"
+      cmd = "xdotool click 1"
       system cmd
     end
 
