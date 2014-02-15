@@ -15,7 +15,8 @@ module Mouse
       x = ensure_pluss(x)
       y = ensure_pluss(y)
 
-      cmd = "xdotool mousemove_relative #{x} #{y}"
+      prefix = x.match(/^\-/) ? '--' : ''
+      cmd = "xdotool mousemove_relative #{prefix} #{x} #{y}"
       puts cmd
       system cmd
     end
