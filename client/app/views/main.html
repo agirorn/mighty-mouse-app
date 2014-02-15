@@ -1,0 +1,26 @@
+<div id="mouse"
+     fingers
+     fingers-clicked="clickIng()"
+     ng-init="fc = 0">
+
+<!-- document-fastclick="clickIng()" -->
+
+<!-- <div id="mouse" fingers> -->
+  <div class="header">
+    <h3 class="text-muted">Mighty Mouse</h3>
+  </div>
+
+  <div class="coordinates">
+    <div><span class="name">clicks:</span><span class="value">{{fc}}</span></div>
+    <div><span class="name">x:</span><span class="value">{{x}}</span></div>
+    <div><span class="name">y:</span><span class="value">{{y}}</span></div>
+    <div><span class="name">offsetX:</span><span class="value">{{offsetX}}</span></div>
+    <div><span class="name">offsetY:</span><span class="value">{{offsetY}}</span></div>
+  </div>
+
+  <div class="footer">
+    <p>Built with <a href="http://angularjs.org/">AngularJS</a>,
+                  <a href="http://ruby-lang.org">Ruby</a> and
+                  <a href="sinatrarb.com">Sinatra</a></p>
+  </div>
+</div>
