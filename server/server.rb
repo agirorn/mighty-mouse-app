@@ -1,7 +1,12 @@
 #!/usr/bin/env ruby
 require 'sinatra'
 require 'multi_json'
+require_relative 'mouse'
 require 'pp'
+
+speed = 2
+
+mouse = Mouse.new speed
 
 def debug
   @debug ||= ENV.include? "DEBUG"
@@ -33,6 +38,8 @@ post '/move' do
   debug_log "offsetX: #{offsetX}"
   debug_log "offsetY: #{offsetY}"
 
+  # commands.move(x,y)
+  mouse.move(offsetX,offsetY)
   MultiJson.dump({
     status: 'ok',
     x: x,
@@ -46,5 +53,6 @@ post '/click' do
   debug_log '#'*80
   debug_log '# CLICK!'
   debug_log '#'*80
+  mouse.click
   MultiJson.dump({ status: 'ok' })
 end
