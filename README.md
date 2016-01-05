@@ -7,7 +7,11 @@ HTML5 mobile mouse
 
 Install
 ================
-To install you need to hava have [ruby](http://www.ruby-lang.org) and [node.js](http://nodejs.org/).
+To install you need to hava have
+[ruby](http://www.ruby-lang.org),
+[node.js](http://nodejs.org/), [npm](npmjs.org)m
+[grunt](http://gruntjs.com/installing-grunt),
+[phantomjs](http://phantomjs.org/)
 
 ```bash
   git clone https://github.com/agirorn/mighty-mouse-app.git
